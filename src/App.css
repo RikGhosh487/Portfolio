@@ -849,6 +849,15 @@ main {
   line-height: 1.6;
 }
 
+.timeline-info-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline-accordion-toggle {
+  color: var(--text-gradient-yellow);
+}
+
 .publication-link {
   color: var(--light-gray-70);
 }
