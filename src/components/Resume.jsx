@@ -1,6 +1,10 @@
 import PropTypes from "prop-types";
+import React from "react";
 
 function Resume({ education, experience, publication, language, skill }) {
+  // State for expanding timeline items
+  const [expandedItems, setExpandedItems] = React.useState([]);
+
   return (
     <article className="resume active">
       <header>
@@ -22,14 +26,47 @@ function Resume({ education, experience, publication, language, skill }) {
                 className="timeline-item"
                 key={edu.toString() + idx.toString()}
               >
-                <h4 className="h4 timeline-item-title">{edu["title"]}</h4>
-                <h5 className="h5">{edu["uni"]}</h5>
-                <span>
-                  {edu["time"]} <em>{!edu["done"] ? "(Expected)" : ""}</em>
-                </span>
+                <div className="timeline-info-card">
+                  <div className="timeline-info-card-2">
+                    <h4 className="h4 timeline-item-title">{edu["title"]}</h4>
+                    <h5 className="h5">{edu["uni"]}</h5>
+                    <span>
+                      {edu["time"]} <em>{!edu["done"] ? "(Expected)" : ""}</em>
+                    </span>
+                  </div>
+                  <div className="icon-box">
+                    <button
+                      className="timeline-accordian-toggle"
+                      onClick={() =>
+                        setExpandedItems((prev) =>
+                          prev.includes(idx)
+                            ? prev.filter((i) => i !== idx)
+                            : [...prev, idx]
+                        )
+                      }
+                      aria-expanded={expandedItems.includes(idx)}
+                      type="button"
+                      aria-controls={`edu-panel-${idx}`}
+                    >
+                      <ion-icon
+                        name={
+                          expandedItems.includes(idx)
+                            ? "chevron-up-outline"
+                            : "chevron-down-outline"
+                        }
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </button>
+                  </div>
+                </div>
                 {edu["texts"].map((txt, i) => (
                   <p
                     className="timeline-text"
+                    style={
+                      expandedItems.includes(idx)
+                        ? { display: "block" }
+                        : { display: "none" }
+                    }
                     key={txt.toString() + i.toString()}
                   >
                     {txt}
