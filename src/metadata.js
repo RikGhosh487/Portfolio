@@ -114,7 +114,7 @@ const EDUCATION = [
     time: "August 2021 — May 2024",
     done: true,
     texts: [
-      "Completed a Bachelor's degree in Mathematics with High Honors with a focus on statistics and applied mathematics, complemented by rigorous coursework in abstract and proof-based subjects such as algebraic structures, complex analysis, and differential equations.",
+      "Completed a Bachelor's degree in Mathematics with High Honors and a focus on statistics and applied mathematics, complemented by rigorous coursework in abstract and proof-based subjects such as algebraic structures, complex analysis, and differential equations.",
       "This program sharpened my analytical thinking and problem-solving skills, providing a strong theoretical backbone for my work in computer science.",
     ],
   },
