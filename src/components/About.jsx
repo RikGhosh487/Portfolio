@@ -12,49 +12,46 @@ function About({ interests, recents }) {
       </header>
 
       <section className="about-text">
+        <h4>Hi, I'm Rik — welcome to my personal website!</h4>
+
         <p>
-          Hi I'm Rik! This is my personal website where you can find some of the
-          projects I've worked on along with my resume.
+          Here, you'll find a selection of projects I've worked on, along with
+          my resume and a bit about my journey so far.
         </p>
 
         <p>
-          I am an enthusiastic and driven Computer Science graduate with a solid
-          foundation in Mathematics, specializing in Statistics and Applied
-          Mathematics. Currently pursuing an Integrated Masters in Computer
-          Science at UT Austin's College of Natural Sciences, focusing on
-          Applications and Systems development.
+          I'm a passionate and driven Computer Science graduate with a strong
+          foundation in Mathematics, particularly in Statistics and Applied
+          Mathematics. I recently earned both my Master's and Bachelor's degrees
+          in Computer Science with High Honors from The University of Texas at
+          Austin, specializing in Applications Engineering and System Design.
+          Additionally, I hold a Bachelor's degress in Mathematics, also with
+          High Honors, from UT Austin.
         </p>
 
         <p>
-          I am passionate about leveraging technology to solve complex problems
-          and am eager to contribute my skills to a dynamic team. With a keen
-          interest in software development, data analysis, data science, and
-          systems programming, I am actively seeking full-time opportunities
-          that will allow me to further develop as a computer scientist while
-          collaborating with industry leaders.
+          Currently, I'm working as an Associate Software Engineer at NOV, where
+          I contribute to innovative solutions that improve the operational
+          efficiency of the DP&A within Rig Technologies. My work allows me to
+          apply my skills in software development, systems programming, and data
+          analysis in real-world, impactful ways.
         </p>
 
         <p>
-          My academic background, combined with hands-on experience in various
-          programming languages and analytical tools, equips me to tackle
-          challenges head-on and drive innovation. I am committed to continuous
-          learning and thrive in environments that foster growth and
-          collaboration.
+          I'm especially passionate about solving complex problems through
+          technology and am always eager to grow, collaborate, and contribute to
+          forward-thinking teams. With experience across a variety of
+          programming languages and analytical tools, I thrive in environments
+          that encourage continuous learning and innovation.
         </p>
 
         <p>
-          I am excited about the prospect of joining a forward-thinking
-          organization where I can apply my expertise, learn from seasoned
-          professionals, and make meaningful contributions to impactful
-          projects.
+          Outside of work, I enjoy exploring new technologies, contributing to
+          open-source projects, and staying up to date with the latest in
+          software development and data science.
         </p>
 
-        <p>
-          Let's connect and explore how my skills and aspirations align with
-          your team's objectives.
-        </p>
-
-        <p>Feel free to contact me via my email!</p>
+        <p>Feel free to reach out — I'd love to connect!</p>
       </section>
 
       {Array.isArray(interests) && interests.length !== 0 && (

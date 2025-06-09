@@ -20,7 +20,7 @@ function Sidebar({ image, alt, socials }) {
           <h1 className="name" title="Rik Ghosh">
             Rik Ghosh
           </h1>
-          <p className="title">CS & Math @ UT Austin</p>
+          <p className="title">Associate Software Engineer @ NOV</p>
         </div>
 
         <button className="info-more-btn" onClick={toggleActive}>
