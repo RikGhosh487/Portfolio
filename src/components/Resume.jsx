@@ -36,7 +36,7 @@ function Resume({ education, experience, publication, language, skill }) {
                   </div>
                   <div className="icon-box">
                     <button
-                      className="timeline-accordian-toggle"
+                      className="timeline-accordion-toggle"
                       onClick={() =>
                         setExpandedItems((prev) =>
                           prev.includes(idx)

@@ -854,7 +854,7 @@ main {
   justify-content: space-between;
 }
 
-.timeline-accordian-toggle {
+.timeline-accordion-toggle {
   color: var(--text-gradient-yellow);
 }
 
@@ -1707,6 +1707,5 @@ main {
 
   .timeline-text {
     max-width: 700px;
-    transition: 0.4s;
   }
 }
