@@ -27,18 +27,19 @@ function TimelineCard({ timelineItem }) {
           </span>
         </span>
         <div className="icon-box">
-          <button className="timeline-accordion-toggle">
+          <button
+            className="timeline-accordion-toggle"
+            onClick={() => handleToggle(timelineItem["id"])}
+          >
             {expandedItem === timelineItem["id"] ? (
               <ion-icon
                 name="chevron-up-outline"
                 aria-hidden="true"
-                onClick={() => handleToggle(timelineItem["id"])}
               ></ion-icon>
             ) : (
               <ion-icon
                 name="chevron-down-outline"
                 aria-hidden="true"
-                onClick={() => handleToggle(timelineItem["id"])}
               ></ion-icon>
             )}
           </button>
